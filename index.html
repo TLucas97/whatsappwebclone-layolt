@@ -25,10 +25,10 @@
                 <div class="search-input">
                     <input type="text" placeholder="Search">
                 </div>
-                <div class="message-box">
+                <div class="message-box" onclick="imageSwitch()">
                     <div style="display: flex; align-items: center">
                         <img src="https://cdn-icons-png.flaticon.com/512/428/428933.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
-                    <div style="margin-left: 5px"><h3>Jack Williams</h3>
+                    <div style="margin-left: 5px"><h3 id="txt_get">Jack Williams</h3>
                         <small>Olá!</small></div>
                     </div>
                     <div style="margin-right: 10px">
@@ -36,7 +36,7 @@
                         <img src="https://cdn-icons.flaticon.com/png/512/2951/premium/2951412.png?token=exp=1645846978~hmac=59fb0ac4cd4c2c0156aa66348bc559b7" alt="aa" width="20" class="opacity-default">
                     </div>
                 </div>
-                <div class="message-box">
+                <div class="message-box" onclick="imageSwitch2()">
                     <div style="display: flex; align-items: center">
                         <img src="https://cdn-icons-png.flaticon.com/512/4086/4086577.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
                     <div style="margin-left: 5px"><h3>Julia Roberts</h3>
@@ -47,7 +47,7 @@
                         <img src="https://cdn-icons.flaticon.com/png/512/2951/premium/2951412.png?token=exp=1645846978~hmac=59fb0ac4cd4c2c0156aa66348bc559b7" alt="aa" width="20" class="opacity-default">
                     </div>
                 </div>
-                <div class="message-box">
+                <div class="message-box" onclick="imageSwitch3()">
                     <div style="display: flex; align-items: center">
                         <img src="https://cdn-icons-png.flaticon.com/512/921/921089.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
                     <div style="margin-left: 5px"><h3>Judy Rock</h3>
@@ -58,7 +58,7 @@
                         <img src="https://cdn-icons.flaticon.com/png/512/2951/premium/2951412.png?token=exp=1645846978~hmac=59fb0ac4cd4c2c0156aa66348bc559b7" alt="aa" width="20" class="opacity-default">
                     </div>
                 </div>
-                <div class="message-box">
+                <div class="message-box" onclick="imageSwitch4()">
                     <div style="display: flex; align-items: center">
                         <img src="https://cdn-icons.flaticon.com/png/512/122/premium/122491.png?token=exp=1645847308~hmac=d5c26dcb210e7955c8781548ffadf4f6" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
                     <div style="margin-left: 5px"><h3>Yummi Nagasaki</h3>
@@ -69,7 +69,7 @@
                         <img src="https://cdn-icons.flaticon.com/png/512/2951/premium/2951412.png?token=exp=1645846978~hmac=59fb0ac4cd4c2c0156aa66348bc559b7" alt="aa" width="20" class="opacity-default">
                     </div>
                 </div>
-                <div class="message-box">
+                <div class="message-box" onclick="imageSwitch5()">
                     <div style="display: flex; align-items: center">
                         <img src="https://cdn-icons-png.flaticon.com/512/122/122468.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
                     <div style="margin-left: 5px"><h3>Bob fly</h3>
@@ -80,7 +80,7 @@
                         <img src="https://cdn-icons.flaticon.com/png/512/2951/premium/2951412.png?token=exp=1645846978~hmac=59fb0ac4cd4c2c0156aa66348bc559b7" alt="aa" width="20" class="opacity-default">
                     </div>
                 </div>
-                <div class="message-box">
+                <div class="message-box" onclick="imageSwitch6()">
                     <div style="display: flex; align-items: center">
                         <img src="https://cdn-icons.flaticon.com/png/512/122/premium/122456.png?token=exp=1645847405~hmac=2ea5c2278f98c4288c1a9628e2205bfe" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
                     <div style="margin-left: 5px"><h3>John Strew</h3>
@@ -91,7 +91,7 @@
                         <img src="https://cdn-icons.flaticon.com/png/512/2951/premium/2951412.png?token=exp=1645846978~hmac=59fb0ac4cd4c2c0156aa66348bc559b7" alt="aa" width="20" class="opacity-default">
                     </div>
                 </div>
-                <div class="message-box">
+                <div class="message-box" onclick="imageSwitch7()">
                     <div style="display: flex; align-items: center">
                         <img src="https://cdn-icons.flaticon.com/png/512/122/premium/122453.png?token=exp=1645847429~hmac=bf333442b44bfdd5b54d09ff185b61a2" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
                     <div style="margin-left: 5px"><h3>Willy Dewit</h3>
@@ -102,7 +102,7 @@
                         <img src="https://cdn-icons.flaticon.com/png/512/2951/premium/2951412.png?token=exp=1645846978~hmac=59fb0ac4cd4c2c0156aa66348bc559b7" alt="aa" width="20" class="opacity-default">
                     </div>
                 </div>
-                <div class="message-box">
+                <div class="message-box" onclick="imageSwitch8()">
                     <div style="display: flex; align-items: center">
                         <img src="https://cdn-icons-png.flaticon.com/512/924/924874.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
                     <div style="margin-left: 5px"><h3>Hacker-man</h3>
@@ -113,7 +113,7 @@
                         <img src="https://cdn-icons.flaticon.com/png/512/2951/premium/2951412.png?token=exp=1645846978~hmac=59fb0ac4cd4c2c0156aa66348bc559b7" alt="aa" width="20" class="opacity-default">
                     </div>
                 </div>
-                <div class="message-box">
+                <div class="message-box" onclick="imageSwitch9()">
                     <div style="display: flex; align-items: center">
                         <img src="https://cdn-icons.flaticon.com/png/512/2790/premium/2790435.png?token=exp=1645847526~hmac=551eb7d7e592d750c0b3a10980cad60f" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
                     <div style="margin-left: 5px"><h3>Charizard</h3>
@@ -129,10 +129,10 @@
                 <div class="teste">
                     <div style="display: flex; align-items: center;">
                         <div style="display: flex; align-items: center">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2922/2922566.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2922/2922566.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px" id="img_1">
                            </div>
-                            <div>
-                                <h3>Flavia Senna</h3>
+                            <div style="margin-left: 10px">
+                                <h3 id="txt_1">Flavia Senna</h3>
                             <small>Visto por último hoje às <span id="current_date"></span></small>
                             </div>
                     </div>
@@ -160,6 +160,52 @@
         var today = new Date();
         var time = today.getHours() + ":" + today.getMinutes();
         document.getElementById("current_date").innerHTML = time;
+
+        function imageSwitch(){
+            document.getElementById("img_1").src="https://cdn-icons-png.flaticon.com/512/428/428933.png"
+            const text = document.getElementById("txt_1");
+            text.textContent = "Jack Williams"
+        }
+        function imageSwitch2(){
+            document.getElementById("img_1").src="https://cdn-icons-png.flaticon.com/512/4086/4086577.png"
+            const text = document.getElementById("txt_1");
+            text.textContent = "Julia Roberts"
+        }
+        function imageSwitch3(){
+            document.getElementById("img_1").src="https://cdn-icons-png.flaticon.com/512/921/921089.png"
+            const text = document.getElementById("txt_1");
+            text.textContent = "Judy Rock"
+        }
+        function imageSwitch4(){
+            document.getElementById("img_1").src="https://cdn-icons.flaticon.com/png/512/122/premium/122491.png?token=exp=1645847308~hmac=d5c26dcb210e7955c8781548ffadf4f6"
+            const text = document.getElementById("txt_1");
+            text.textContent = "Yummi Nagasaki"
+        }
+        function imageSwitch5(){
+            document.getElementById("img_1").src="https://cdn-icons-png.flaticon.com/512/122/122468.png"
+            const text = document.getElementById("txt_1");
+            text.textContent = "Bob fly"
+        }
+        function imageSwitch6(){
+            document.getElementById("img_1").src="https://cdn-icons.flaticon.com/png/512/122/premium/122456.png?token=exp=1645847405~hmac=2ea5c2278f98c4288c1a9628e2205bfe"
+            const text = document.getElementById("txt_1");
+            text.textContent = "John Strew"
+        }
+        function imageSwitch7(){
+            document.getElementById("img_1").src="https://cdn-icons.flaticon.com/png/512/122/premium/122453.png?token=exp=1645847429~hmac=bf333442b44bfdd5b54d09ff185b61a2"
+            const text = document.getElementById("txt_1");
+            text.textContent = "Willy Dewit"
+        }
+        function imageSwitch8(){
+            document.getElementById("img_1").src="https://cdn-icons-png.flaticon.com/512/924/924874.png"
+            const text = document.getElementById("txt_1");
+            text.textContent = "Hacker-man"
+        }
+        function imageSwitch9(){
+            document.getElementById("img_1").src="https://cdn-icons.flaticon.com/png/512/2790/premium/2790435.png?token=exp=1645847526~hmac=551eb7d7e592d750c0b3a10980cad60f"
+            const text = document.getElementById("txt_1");
+            text.textContent = "Charizard"
+        }
     </script>
 </body>
 </html>
