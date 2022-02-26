@@ -8,11 +8,12 @@
     <title>Whatsapp Web</title>
 </head>
 <body>
+<div id="wrap">
     <section>
 
         <div class="container">
-            <div class="side-bar">
-                <div class="sub-bar">
+            <div class="side-bar" id="side-change">
+                <div class="sub-bar" id="side-change2">
                     <div class="profile-pic">
                         <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/daredevil-2380526-2013303.png" alt="aa" width="40">
                         <small>BETA</small>
@@ -22,6 +23,8 @@
                         onclick="imageSwitchStart()">
                         <img src="https://cdn-icons.flaticon.com/png/512/2311/premium/2311524.png?token=exp=1645844889~hmac=dce1b3fb9e1ef67115cbc3ab9c17b289" alt="aaa" width="20" class="opacity-default"
                         >
+                        <img src="https://cdn-icons-png.flaticon.com/512/42/42146.png" alt="aaa" width="20" class="opacity-default"
+                        onclick="switchState()">
                     </div>
                 </div>
                 <div class="search-input">
@@ -128,7 +131,7 @@
                 </div>
             </div>
             <div style="width: 100%; display: flex; flex-direction: column;">
-                <div class="teste">
+                <div class="teste" id="side-change3">
                     <div style="display: flex; align-items: center;">
                         <div style="display: flex; align-items: center">
                             <img src="https://cdn-icons-png.flaticon.com/512/2922/2922566.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px; cursor:pointer" id="img_1" class="pic-hover">
@@ -145,7 +148,7 @@
                  </div>
                  <div class="chat-box">
                         <div style="margin-left: 10px">
-                            <img src="https://cdn-icons-png.flaticon.com/512/1023/1023656.png" alt="aaa" width="27" class="opacity-default">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1023/1023656.png" alt="aaa" width="27" class="opacity-default" style="margin-right: 10px;">
                             <img src="https://cdn-icons-png.flaticon.com/512/659/659774.png" alt="aaa" width="27" class="opacity-default">
                         </div>
                         <div>
@@ -158,6 +161,7 @@
             </div>
         </div>
     </section>
+</div>    
 <script src="./script/script.js"></script>
 </body>
 </html>

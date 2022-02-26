@@ -9,8 +9,9 @@
         text-decoration: none;
         color: black;
     }
-    body{
+    #wrap{
         background: #00A884;
+        height: 100vh;
     }
     font-family: 'Roboto', sans-serif;
 }
@@ -96,9 +97,9 @@ section{
 
     .chat-box{
         position: relative;
-        top: 793px;
+        top: 783px;
         width: 100%;
-        height: 59px;
+        height: 69px;
         background: #adaba8;
         display: flex;
         align-items: center;
@@ -106,7 +107,7 @@ section{
     }
     .message-input{
         width: 940px;
-        height: 35px;
+        height: 45px;
         margin-left: 10px;
         margin-right: 10px;
         border-radius: 5px;

@@ -52,3 +52,38 @@ var today = new Date();
             const text = document.getElementById("txt_1");
             text.textContent = "Flavia Senna"
         }
+
+        let state = false       
+
+        function darkMode(){
+            const background = document.getElementById("wrap")
+            const sidebar = document.getElementById("side-change")
+            const sidebar2 = document.getElementById("side-change2")
+            const sidebar3 = document.getElementById("side-change3")
+
+            background.style.background = "#0A1014";
+            sidebar.style.background = "grey";
+            sidebar2.style.background = "grey";
+            sidebar3.style.background = "grey";
+        }
+        function normalMode(){
+            const background = document.getElementById("wrap")
+            const sidebar = document.getElementById("side-change")
+            const sidebar2 = document.getElementById("side-change2")
+            const sidebar3 = document.getElementById("side-change3")
+
+            background.style.background = "#00A884";
+            sidebar.style.background = "grey";
+            sidebar2.style.background = "grey";
+            sidebar3.style.background = "grey";
+        }
+
+        function switchState(){
+            if (state == false){
+                darkMode();
+                state = true;
+            } else {
+                normalMode();
+                state = false;
+            }
+        }
