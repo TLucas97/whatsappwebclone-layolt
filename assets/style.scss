@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    body{
+        background: #00A884;
+    }
+    font-family: 'Roboto', sans-serif;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+
+    .container{
+        max-width: 1400px;
+        width: 100%;
+        margin-top: 19px;
+        height: 911px;
+        background: url('https://wallpaperaccess.com/full/562233.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        border-radius: 10px;
+    }
+
+    .side-bar{
+        width: 30%;
+        height: 100%;
+        width: 419px;
+        background: #0b8369;
+        border-radius: 10px 0px 0px 10px;
+        .sub-bar{
+            border-radius: 10px 0px 0px 0px;
+            width: 100%;
+            height: 59px;
+            background: #0b8369;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .search-input{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .search-input input{
+            width: 90%;
+            height: 35px;
+            border-radius: 10px;
+            margin-top: 10px;
+            border: none;
+        }
+
+        .search-input input::placeholder, .search-input input[type="text"]{
+            padding-left: 10px;
+            font-size: 20px;
+        }
+
+        .message-box{
+            background-color: white;
+            height: 80px;
+            border-top: 1px solid gray;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    .teste{
+        width: 100%;
+        height: 59px;
+        background: #F0F2F5;
+        border-radius: 0px 10px 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .chat-box{
+        position: relative;
+        top: 800px;
+        width: 100%;
+        height: 59px;
+        background: #adaba8;
+        display: flex;
+        align-items: center;
+        border-radius: 0px 0px 10px 0px;
+    }
+    .message-input{
+        width: 940px;
+        height: 35px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .chat-box input::placeholder, .chat-box input[type="text"]{
+        padding-left: 10px;
+        font-size: 20px;
+    }
+
+    .profile-pic{
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+        img{
+            margin-right: 10px;
+        }
+    }
+}
+
+.opacity-default{
+    opacity: .6;
+    transition: .1s;
+    cursor: pointer;
+}
+
+.opacity-default:hover{
+    opacity: 1;
+}

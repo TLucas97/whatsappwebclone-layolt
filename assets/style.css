@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+* a {
+  text-decoration: none;
+  color: black;
+}
+
+* body {
+  background: #00A884;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .container {
+  max-width: 1400px;
+  width: 100%;
+  margin-top: 19px;
+  height: 911px;
+  background: url("https://wallpaperaccess.com/full/562233.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+}
+
+section .side-bar {
+  width: 30%;
+  height: 100%;
+  width: 419px;
+  background: #0b8369;
+  border-radius: 10px 0px 0px 10px;
+}
+
+section .side-bar .sub-bar {
+  border-radius: 10px 0px 0px 0px;
+  width: 100%;
+  height: 59px;
+  background: #0b8369;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .side-bar .search-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 15px;
+}
+
+section .side-bar .search-input input {
+  width: 90%;
+  height: 35px;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: none;
+}
+
+section .side-bar .search-input input::-webkit-input-placeholder, section .side-bar .search-input input[type="text"] {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+section .side-bar .search-input input:-ms-input-placeholder, section .side-bar .search-input input[type="text"] {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+section .side-bar .search-input input::-ms-input-placeholder, section .side-bar .search-input input[type="text"] {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+section .side-bar .search-input input::placeholder, section .side-bar .search-input input[type="text"] {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+section .side-bar .message-box {
+  background-color: white;
+  height: 80px;
+  border-top: 1px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .teste {
+  width: 100%;
+  height: 59px;
+  background: #F0F2F5;
+  border-radius: 0px 10px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .chat-box {
+  position: relative;
+  top: 800px;
+  width: 100%;
+  height: 59px;
+  background: #adaba8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0px 0px 10px 0px;
+}
+
+section .message-input {
+  width: 940px;
+  height: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+section .chat-box input::-webkit-input-placeholder, section .chat-box input[type="text"] {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+section .chat-box input:-ms-input-placeholder, section .chat-box input[type="text"] {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+section .chat-box input::-ms-input-placeholder, section .chat-box input[type="text"] {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+section .chat-box input::placeholder, section .chat-box input[type="text"] {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+section .profile-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 15px;
+}
+
+section .profile-pic img {
+  margin-right: 10px;
+}
+
+.opacity-default {
+  opacity: .6;
+  -webkit-transition: .1s;
+  transition: .1s;
+  cursor: pointer;
+}
+
+.opacity-default:hover {
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */
