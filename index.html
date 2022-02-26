@@ -73,7 +73,7 @@
                     <div style="display: flex; align-items: center">
                         <img src="https://cdn-icons-png.flaticon.com/512/122/122468.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
                     <div style="margin-left: 5px"><h3>Bob fly</h3>
-                        <small>Fala doido! Aqui é o Bob f...</small></div>
+                        <small>Fala cara! Aqui é o Bob f...</small></div>
                     </div>
                     <div style="margin-right: 10px">
                         <p>07:00</p>
@@ -133,7 +133,7 @@
                            </div>
                             <div>
                                 <h3>Flavia Senna</h3>
-                            <small>Visto por último hoje às 10:00</small>
+                            <small>Visto por último hoje às <span id="current_date"></span></small>
                             </div>
                     </div>
                     <div>
@@ -156,5 +156,10 @@
             </div>
         </div>
     </section>
+    <script>
+        var today = new Date();
+        var time = today.getHours() + ":" + today.getMinutes();
+        document.getElementById("current_date").innerHTML = time;
+    </script>
 </body>
 </html>
