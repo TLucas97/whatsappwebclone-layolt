@@ -73,9 +73,9 @@ var today = new Date();
             const sidebar3 = document.getElementById("side-change3")
 
             background.style.background = "#00A884";
-            sidebar.style.background = "grey";
-            sidebar2.style.background = "grey";
-            sidebar3.style.background = "grey";
+            sidebar.style.background = "#0B8369";
+            sidebar2.style.background = "#0B8369";
+            sidebar3.style.background = "white";
         }
 
         function switchState(){
@@ -87,3 +87,16 @@ var today = new Date();
                 state = false;
             }
         }
+
+        function modalShow(){
+            let modal = document.getElementById("modal_container");
+            modal.style.visibility = "visible";
+            modal.style.opacity = 1;
+        }
+
+        function modalClose(){
+            let modal = document.getElementById("modal_container");
+            modal.style.visibility = "hidden";
+            modal.style.opacity = 0;
+        }
+

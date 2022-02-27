@@ -8,14 +8,47 @@
     <title>Whatsapp Web</title>
 </head>
 <body>
+    <div class="modal" id="modal_container">
+        <div class="modal-content">
+            <div style="display: flex; justify-content: center;">
+                <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/daredevil-2380526-2013303.png" alt="aaa" width="150" class="profile-photo">
+            </div>
+            <div style="margin-bottom: 20px;">
+                <h3 style="margin-bottom: 5px">Seu nome</h3>
+                <div style="display: flex; justify-content: space-between;">
+                    <h2 style="color: white">Tarcísio Almeida</h2>
+                    <img src="https://cdn-icons.flaticon.com/png/512/2740/premium/2740651.png?token=exp=1645929784~hmac=cbe356c3818b6ca78093279d9bd1f6b8" alt="aaa" width="30">
+                </div>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <h3 style="margin-bottom: 5px">Contato</h3>
+                <div style="display: flex; justify-content: space-between;">
+                    <h2 style="color: white">(91) 98917-6415</h2>
+                    <img src="https://cdn-icons.flaticon.com/png/512/2740/premium/2740651.png?token=exp=1645929784~hmac=cbe356c3818b6ca78093279d9bd1f6b8" alt="aaa" width="30">
+                </div>
+            </div>
+            <div style="margin-bottom: 50px;">
+                <h3 style="margin-bottom: 5px">Recado</h3>
+                <div style="display: flex; justify-content: space-between;">
+                    <h2 style="color: white">Estudando</h2>
+                    <img src="https://cdn-icons.flaticon.com/png/512/2740/premium/2740651.png?token=exp=1645929784~hmac=cbe356c3818b6ca78093279d9bd1f6b8" alt="aaa" width="30">
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <img src="https://cdn-icons.flaticon.com/png/512/3633/premium/3633357.png?token=exp=1645930416~hmac=fd930d6cf6dba0d1b5ec6fdeed4f3a2d" alt="aaa" width="60" style="margin: 0px 25px" class="opacity-default">
+                <img src="https://cdn-icons-png.flaticon.com/512/463/463612.png" alt="aaa" width="60" style="margin: 0px 25px" class="opacity-default" onclick="modalClose()">
+            </div>
+        </div>
+    </div>
 <div id="wrap">
     <section>
 
         <div class="container">
             <div class="side-bar" id="side-change">
                 <div class="sub-bar" id="side-change2">
-                    <div class="profile-pic">
-                        <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/daredevil-2380526-2013303.png" alt="aa" width="40">
+                    <div class="profile-pic" onclick="modalShow()">
+                        <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/daredevil-2380526-2013303.png" alt="aa" width="40"
+                        style="cursor:pointer; border-radius: 50%;" class="pic-hover">
                         <small>BETA</small>
                     </div>
                     <div style="margin-right: 10px">
