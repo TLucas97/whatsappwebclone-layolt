@@ -25,7 +25,7 @@ section{
     display: flex;
     justify-content: center;
 
-    .container{
+    #container{
         max-width: 1400px;
         width: 100%;
         margin-top: 19px;
@@ -33,6 +33,7 @@ section{
         background: url('https://wallpaperaccess.com/full/562233.jpg');
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
         display: flex;
         border-radius: 10px;
     }

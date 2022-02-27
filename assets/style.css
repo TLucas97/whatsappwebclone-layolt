@@ -33,7 +33,7 @@ section {
           justify-content: center;
 }
 
-section .container {
+section #container {
   max-width: 1400px;
   width: 100%;
   margin-top: 19px;
@@ -41,6 +41,7 @@ section .container {
   background: url("https://wallpaperaccess.com/full/562233.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
