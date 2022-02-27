@@ -183,4 +183,15 @@ section{
 
 .edit-input{
     display: none;
+    background: none;
+    border-bottom: 3px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.inpput input[type="text"]{
+    font-size: 23px;
+    color: white;
+    font-weight: bold;
 }

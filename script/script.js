@@ -116,7 +116,35 @@ var today = new Date();
 
         function modalClose(){
             let modal = document.getElementById("modal_container");
+            let userEdit = document.getElementById("edit-user")
+            let userEdit2 = document.getElementById("edit-user2")
+            let userName = document.getElementById("user")
+            let userName2 = document.getElementById("user2")
+
+            userEdit.style.display = "none"
+            userEdit2.style.display = "none"
+            userName.style.display = "block"
+            userName2.style.display = "block"
             modal.style.visibility = "hidden";
             modal.style.opacity = 0;
         }
+
+        function editUserName(){
+            let userName = document.getElementById("user")
+            let userEdit = document.getElementById("edit-user")
+
+            userName.style.display = "none"
+            userEdit.style.display = "block"
+        }
+
+        function editUserStatus(){
+            let userName2 = document.getElementById("user2")
+            let userEdit2 = document.getElementById("edit-user2")
+
+            userName2.style.display = "none"
+            userEdit2.style.display = "block"
+        }
+
+        var input = document.querySelector("#name").value;
+        console.log(input);
 
