@@ -129,22 +129,59 @@ var today = new Date();
             modal.style.opacity = 0;
         }
 
-        function editUserName(){
+        function edit(){
+            let userName2 = document.getElementById("user2")
+            let userEdit2 = document.getElementById("edit-user2")
             let userName = document.getElementById("user")
             let userEdit = document.getElementById("edit-user")
+            let pen = document.getElementById("pen")
+            let save = document.getElementById("save")
 
             userName.style.display = "none"
             userEdit.style.display = "block"
-        }
-
-        function editUserStatus(){
-            let userName2 = document.getElementById("user2")
-            let userEdit2 = document.getElementById("edit-user2")
-
             userName2.style.display = "none"
             userEdit2.style.display = "block"
+            pen.style.display = "none"
+            save.style.display = "block"
+            // userEdit.value = userName.textContent
+            userName.textContent = userEdit.value
         }
 
-        var input = document.querySelector("#name").value;
-        console.log(input);
+        function save(){
+            let userName2 = document.getElementById("user2")
+            let userEdit2 = document.getElementById("edit-user2")
+            let userName = document.getElementById("user")
+            let userEdit = document.getElementById("edit-user")
+            let pen = document.getElementById("pen")
+            let save = document.getElementById("save")
+
+            userName.textContent = userEdit.value
+            userName2.textContent = userEdit2.value
+
+            userEdit.style.display = "none"
+            userEdit2.style.display = "none"
+            userName.style.display = "block"
+            userName2.style.display = "block"
+            pen.style.display = "block"
+            save.style.display = "none"
+        }
+
+        const modalChanger = document.getElementById("modal_modify")
+        const nameWrap = document.getElementById("nameWrap")
+        const nameArea = document.getElementById("nameArea")
+
+
+
+        // modalChanger.addEventListener('click', (event) => {
+        //     const button = event.target;
+        //     nameArea = button.parentNode;
+        //     nameWrap = nameArea.parentNode;
+        //      if(button.textContent === `<img src="https://cdn-icons.flaticon.com/png/512/3633/premium/3633357.png?token=exp=1645930416~hmac=fd930d6cf6dba0d1b5ec6fdeed4f3a2d" alt="aaa" width="60" style="margin: 0px 25px" class="opacity-default" onclick="editNameSucess()">`){
+        //         const span = nameWrap.firstChild;
+        //         const input = document.createElement('input');
+        //         input.type = 'text';
+        //         input.value = span.textContent
+        //         nameArea.insertBefore(input, span)
+        //      }
+        // })
 
