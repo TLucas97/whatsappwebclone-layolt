@@ -24,7 +24,7 @@ var today = new Date();
             background.style.backgroundImage = "url('https://i.pinimg.com/originals/4f/6f/a5/4f6fa5512364d0b3b4485c94fd737d9b.jpg')";
         }
         function imageSwitch4(){
-            document.getElementById("img_1").src="https://cdn-icons.flaticon.com/png/512/122/premium/122491.png?token=exp=1645847308~hmac=d5c26dcb210e7955c8781548ffadf4f6"
+            document.getElementById("img_1").src="./assets/img/yumi-nagasaki.png"
             const background = document.getElementById("container")
             const text = document.getElementById("txt_1");
             text.textContent = "Yummi Nagasaki"
@@ -38,14 +38,14 @@ var today = new Date();
             background.style.backgroundImage = "url('https://picjumbo.com/wp-content/uploads/calm-sea-background-2210x1473.jpg')";
         }
         function imageSwitch6(){
-            document.getElementById("img_1").src="https://cdn-icons.flaticon.com/png/512/122/premium/122456.png?token=exp=1645847405~hmac=2ea5c2278f98c4288c1a9628e2205bfe"
+            document.getElementById("img_1").src="../assets/img/john-strew.png"
             const background = document.getElementById("container")
             const text = document.getElementById("txt_1");
             text.textContent = "John Strew"
             background.style.backgroundImage = "url('https://i.pinimg.com/originals/13/65/96/1365966106c7cf5a9e4eb0cbe5d20432.jpg')";
         }
         function imageSwitch7(){
-            document.getElementById("img_1").src="https://cdn-icons.flaticon.com/png/512/122/premium/122453.png?token=exp=1645847429~hmac=bf333442b44bfdd5b54d09ff185b61a2"
+            document.getElementById("img_1").src="../assets/img/willy-dewit.png"
             const background = document.getElementById("container")
             const text = document.getElementById("txt_1");
             text.textContent = "Willy Dewit"
@@ -59,10 +59,10 @@ var today = new Date();
             background.style.backgroundImage = "url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&w=1000&q=80')";
         }
         function imageSwitch9(){
-            document.getElementById("img_1").src="https://cdn-icons.flaticon.com/png/512/2790/premium/2790435.png?token=exp=1645847526~hmac=551eb7d7e592d750c0b3a10980cad60f"
+            document.getElementById("img_1").src="../assets/img/pikachu.png"
             const background = document.getElementById("container")
             const text = document.getElementById("txt_1");
-            text.textContent = "Charizard"
+            text.textContent = "Pikachu"
             background.style.backgroundImage = "url('https://wallpaperforu.com/wp-content/uploads/2021/08/Wallpaper-Pokemon-Wallpaper-Pokemon-Minimalism-Squirtle441280x1024.jpg')";
         }
         function imageSwitchStart(){
@@ -127,6 +127,146 @@ var today = new Date();
             userName2.style.display = "block"
             modal.style.visibility = "hidden";
             modal.style.opacity = 0;
+        }
+
+        function modalProfileClose(){
+            let modal = document.getElementById("modal_container2");
+
+            modal.style.visibility = "hidden";
+            modal.style.opacity = 0;
+        }
+
+        function showProfile0(){
+            let name = document.getElementById("txt_1")
+            let profile_pic = document.getElementById("profile_changer")
+            let user_status = document.getElementById("user_model2")
+            let user_name = document.getElementById("user_model")
+            let modal = document.getElementById("modal_container2");
+            let testin = document.getElementById("img_1")
+
+            profile_pic.src = testin.src
+            modal.style.visibility = "visible";
+            modal.style.opacity = 1;
+            user_status.textContent = "Hello"
+            user_name.textContent = name.textContent
+        }
+        function showProfile1(){
+            let name = document.getElementById("txt_get")
+            let profile_pic = document.getElementById("profile_changer")
+            let user_status = document.getElementById("user_model2")
+            let user_name = document.getElementById("user_model")
+            let modal = document.getElementById("modal_container2");
+            let testin = document.getElementById("testin")
+
+            profile_pic.src = testin.src
+            modal.style.visibility = "visible";
+            modal.style.opacity = 1;
+            user_status.textContent = "Estou atrás de oportunidades!"
+            user_name.textContent = name.textContent
+        }
+        function showProfile2(){
+            let name = document.getElementById("txt_get2")
+            let profile_pic = document.getElementById("profile_changer")
+            let user_status = document.getElementById("user_model2")
+            let user_name = document.getElementById("user_model")
+            let modal = document.getElementById("modal_container2");
+
+            profile_pic.src = './assets/img/julia-roberts.png'
+            modal.style.visibility = "visible";
+            modal.style.opacity = 1;
+            user_status.textContent = "Carnaval em casa?"
+            user_name.textContent = name.textContent
+        }
+        function showProfile3(){
+            let name = document.getElementById("txt_get3")
+            let profile_pic = document.getElementById("profile_changer")
+            let user_status = document.getElementById("user_model2")
+            let user_name = document.getElementById("user_model")
+            let modal = document.getElementById("modal_container2");
+
+            profile_pic.src = './assets/img/judy-rock.png'
+            modal.style.visibility = "visible";
+            modal.style.opacity = 1;
+            user_status.textContent = "Viajando... zzz"
+            user_name.textContent = name.textContent
+        }
+        function showProfile4(){
+            let name = document.getElementById("txt_get4")
+            let profile_pic = document.getElementById("profile_changer")
+            let user_status = document.getElementById("user_model2")
+            let user_name = document.getElementById("user_model")
+            let modal = document.getElementById("modal_container2");
+
+            profile_pic.src = './assets/img/yumi-nagasaki.png'
+            modal.style.visibility = "visible";
+            modal.style.opacity = 1;
+            user_status.textContent = "Jogando pokemonGO"
+            user_name.textContent = name.textContent
+        }
+        function showProfile5(){
+            let name = document.getElementById("txt_get5")
+            let profile_pic = document.getElementById("profile_changer")
+            let user_status = document.getElementById("user_model2")
+            let user_name = document.getElementById("user_model")
+            let modal = document.getElementById("modal_container2");
+
+            profile_pic.src = './assets/img/bob-fly.png'
+            modal.style.visibility = "visible";
+            modal.style.opacity = 1;
+            user_status.textContent = "Hello"
+            user_name.textContent = name.textContent
+        }
+        function showProfile6(){
+            let name = document.getElementById("txt_get6")
+            let profile_pic = document.getElementById("profile_changer")
+            let user_status = document.getElementById("user_model2")
+            let user_name = document.getElementById("user_model")
+            let modal = document.getElementById("modal_container2");
+
+            profile_pic.src = './assets/img/john-strew.png'
+            modal.style.visibility = "visible";
+            modal.style.opacity = 1;
+            user_status.textContent = "Let's Go!"
+            user_name.textContent = name.textContent
+        }
+        function showProfile7(){
+            let name = document.getElementById("txt_get7")
+            let profile_pic = document.getElementById("profile_changer")
+            let user_status = document.getElementById("user_model2")
+            let user_name = document.getElementById("user_model")
+            let modal = document.getElementById("modal_container2");
+
+            profile_pic.src = './assets/img/willy-dewit.png'
+            modal.style.visibility = "visible";
+            modal.style.opacity = 1;
+            user_status.textContent = "Memento mori [...]"
+            user_name.textContent = name.textContent
+        }
+        function showProfile8(){
+            let name = document.getElementById("txt_get8")
+            let profile_pic = document.getElementById("profile_changer")
+            let user_status = document.getElementById("user_model2")
+            let user_name = document.getElementById("user_model")
+            let modal = document.getElementById("modal_container2");
+
+            profile_pic.src = './assets/img/hacker-man.png'
+            modal.style.visibility = "visible";
+            modal.style.opacity = 1;
+            user_status.textContent = "I'm !happy"
+            user_name.textContent = name.textContent
+        }
+        function showProfile9(){
+            let name = document.getElementById("txt_get9")
+            let profile_pic = document.getElementById("profile_changer")
+            let user_status = document.getElementById("user_model2")
+            let user_name = document.getElementById("user_model")
+            let modal = document.getElementById("modal_container2");
+
+            profile_pic.src = './assets/img/pikachu.png'
+            modal.style.visibility = "visible";
+            modal.style.opacity = 1;
+            user_status.textContent = "..."
+            user_name.textContent = name.textContent
         }
 
         function edit(){

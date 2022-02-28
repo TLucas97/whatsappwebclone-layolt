@@ -16,16 +16,17 @@
             <div style="margin-bottom: 20px;">
                 <h3 style="margin-bottom: 5px">Seu nome</h3>
                 <div style="display: flex; justify-content: space-between;">
-                    <div class="inpput"><h2 style="color: white" id="user"><span>Default user</span></h2>
+                    <div class="inpput"><h2 style="color: white" id="user"><span>Lucas Senna</span></h2>
                         <input type="text" class="edit-input" id="edit-user">
                     </div>
                 </div>
             </div>
             <div style="margin-bottom: 20px;">
                 <h3 style="margin-bottom: 5px">Contato</h3>
-                <div style="display: flex; justify-content: space-between;">
-                    <div><h2 style="color: white">(00) 00000-0000</h2>
-                    </div>
+                <div style="display: flex; justify-content: start;">
+                    <div style="margin-right: 10px; cursor: pointer;"><a target="_blank" href="https://github.com/TLucas97"><img src="./assets/img/github.png" alt="" width="40"></a></div>
+                    <div style="margin-right: 10px; cursor: pointer;"><a target="_blank" href="https://www.linkedin.com/in/tarc%C3%ADsio-almeida-0a5577207/"><img src="./assets/img/linkedin.png" alt="" width="40"></a></div>
+                    <div style="cursor: pointer;"><a target="_blank" href="https://tarcisio-portfolio.netlify.app/#"><img src="./assets/img/portfolio.png" alt="" width="40"></a></div>
                 </div>
             </div>
             <div style="margin-bottom: 50px;">
@@ -40,16 +41,51 @@
             <div style="display: flex; justify-content:space-around;">
                 <div id="save" style="display:none">
                     <button  style="background: none; border:none;">
-                        <img style="cursor:pointer" class="opacity-default" src="https://cdn-icons-png.flaticon.com/512/845/845646.png" alt="aa" onclick="save()" width="60">
+                        <img style="cursor:pointer" class="opacity-default" src="https://cdn-icons-png.flaticon.com/512/845/845646.png" alt="aa" onclick="save()" width="50">
                     </button>
                 </div>
                 <div id="pen">
                     <butto style="background: none; border:none">
-                        <img style="cursor:pointer" class="opacity-default" onclick="edit()" src="https://cdn-icons.flaticon.com/png/512/2740/premium/2740651.png?token=exp=1645929784~hmac=cbe356c3818b6ca78093279d9bd1f6b8" alt="aaa" width="60">
+                        <img style="cursor:pointer" class="opacity-default" onclick="edit()" src="https://cdn-icons.flaticon.com/png/512/2740/premium/2740651.png?token=exp=1645929784~hmac=cbe356c3818b6ca78093279d9bd1f6b8" alt="aaa" width="50">
                     </button>
                 </div>
                 <div>
-                    <button style="background: none; border:none"><img src="https://cdn-icons-png.flaticon.com/512/463/463612.png" alt="aaa" width="60"  class="opacity-default" onclick="modalClose()"></button>
+                    <button style="background: none; border:none"><img src="https://cdn-icons-png.flaticon.com/512/463/463612.png" alt="aaa" width="50"  class="opacity-default" onclick="modalClose()"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal2" id="modal_container2">
+        <div class="modal-content2">
+            <div style="display: flex; justify-content: center;">
+                <img id="profile_changer" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/daredevil-2380526-2013303.png" alt="aaa" width="150" class="profile-photo">
+            </div>
+            <div style="margin-bottom: 20px;">
+                <h3 style="margin-bottom: 5px">Nome</h3>
+                <div style="display: flex; justify-content: space-between;">
+                    <div class="inpput"><h2 style="color: white" id="user_model"><span>Lucas Senna</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <h3 style="margin-bottom: 5px">Contato</h3>
+                <div style="display: flex; justify-content: start;">
+                    <div style="margin-right: 10px; cursor: pointer;"><a target="_blank" href="https://github.com/TLucas97"><img src="./assets/img/github.png" alt="" width="40"></a></div>
+                    <div style="margin-right: 10px; cursor: pointer;"><a target="_blank" href="https://www.linkedin.com/in/tarc%C3%ADsio-almeida-0a5577207/"><img src="./assets/img/linkedin.png" alt="" width="40"></a></div>
+                    <div style="cursor: pointer;"><a target="_blank" href="https://tarcisio-portfolio.netlify.app/#"><img src="./assets/img/portfolio.png" alt="" width="40"></a></div>
+                </div>
+            </div>
+            <div style="margin-bottom: 50px;">
+                <h3 style="margin-bottom: 5px">Status</h3>
+                <div style="display: flex; justify-content: space-between;">
+                    <div class="inpput">
+                        <h2 style="color: white" id="user_model2"><span>Estudando</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; justify-content:space-around;">
+                <div>
+                    <button style="background: none; border:none"><img src="https://cdn-icons-png.flaticon.com/512/463/463612.png" alt="aaa" width="50"  class="opacity-default" onclick="modalProfileClose()"></button>
                 </div>
             </div>
         </div>
@@ -79,7 +115,7 @@
                 </div>
                 <div class="message-box" onclick="imageSwitch()">
                     <div style="display: flex; align-items: center">
-                        <img class="pic-hover" src="https://cdn-icons-png.flaticon.com/512/428/428933.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
+                        <img onclick="showProfile1()" class="pic-hover" src="https://cdn-icons-png.flaticon.com/512/428/428933.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px" id="testin">
                     <div style="margin-left: 5px"><h3 id="txt_get">Jack Williams</h3>
                         <small>Olá!</small></div>
                     </div>
@@ -90,8 +126,8 @@
                 </div>
                 <div class="message-box" onclick="imageSwitch2()">
                     <div style="display: flex; align-items: center">
-                        <img class="pic-hover" src="https://cdn-icons-png.flaticon.com/512/4086/4086577.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
-                    <div style="margin-left: 5px"><h3>Julia Roberts</h3>
+                        <img onclick="showProfile2()" class="pic-hover" src="https://cdn-icons-png.flaticon.com/512/4086/4086577.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
+                    <div style="margin-left: 5px"><h3 id="txt_get2">Julia Roberts</h3>
                         <small>Oii, tudo bom?</small></div>
                     </div>
                     <div style="margin-right: 10px">
@@ -101,8 +137,8 @@
                 </div>
                 <div class="message-box" onclick="imageSwitch3()">
                     <div style="display: flex; align-items: center">
-                        <img class="pic-hover" src="https://cdn-icons-png.flaticon.com/512/921/921089.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
-                    <div style="margin-left: 5px"><h3>Judy Rock</h3>
+                        <img onclick="showProfile3()" class="pic-hover" src="https://cdn-icons-png.flaticon.com/512/921/921089.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
+                    <div style="margin-left: 5px"><h3 id="txt_get3">Judy Rock</h3>
                         <small>Vamos visitar o chris!</small></div>
                     </div>
                     <div style="margin-right: 10px">
@@ -112,8 +148,8 @@
                 </div>
                 <div class="message-box" onclick="imageSwitch4()">
                     <div style="display: flex; align-items: center">
-                        <img class="pic-hover" src="https://cdn-icons.flaticon.com/png/512/122/premium/122491.png?token=exp=1645847308~hmac=d5c26dcb210e7955c8781548ffadf4f6" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
-                    <div style="margin-left: 5px"><h3>Yummi Nagasaki</h3>
+                        <img onclick="showProfile4()" class="pic-hover" src="./assets/img/yumi-nagasaki.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
+                    <div style="margin-left: 5px"><h3 id="txt_get4">Yummi Nagasaki</h3>
                         <small>Olá, tudo bem?</small></div>
                     </div>
                     <div style="margin-right: 10px">
@@ -123,8 +159,8 @@
                 </div>
                 <div class="message-box" onclick="imageSwitch5()">
                     <div style="display: flex; align-items: center">
-                        <img class="pic-hover" src="https://cdn-icons-png.flaticon.com/512/122/122468.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
-                    <div style="margin-left: 5px"><h3>Bob fly</h3>
+                        <img onclick="showProfile5()" class="pic-hover" src="https://cdn-icons-png.flaticon.com/512/122/122468.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
+                    <div style="margin-left: 5px"><h3 id="txt_get5">Bob fly</h3>
                         <small>Fala cara! Aqui é o Bob f...</small></div>
                     </div>
                     <div style="margin-right: 10px">
@@ -134,8 +170,8 @@
                 </div>
                 <div class="message-box" onclick="imageSwitch6()">
                     <div style="display: flex; align-items: center">
-                        <img class="pic-hover" src="https://cdn-icons.flaticon.com/png/512/122/premium/122456.png?token=exp=1645847405~hmac=2ea5c2278f98c4288c1a9628e2205bfe" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
-                    <div style="margin-left: 5px"><h3>John Strew</h3>
+                        <img onclick="showProfile6()" class="pic-hover" src="./assets/img/john-strew.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
+                    <div style="margin-left: 5px"><h3 id="txt_get6">John Strew</h3>
                         <small>Olá senhor!</small></div>
                     </div>
                     <div style="margin-right: 10px">
@@ -145,8 +181,8 @@
                 </div>
                 <div class="message-box" onclick="imageSwitch7()">
                     <div style="display: flex; align-items: center">
-                        <img class="pic-hover" src="https://cdn-icons.flaticon.com/png/512/122/premium/122453.png?token=exp=1645847429~hmac=bf333442b44bfdd5b54d09ff185b61a2" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
-                    <div style="margin-left: 5px"><h3>Willy Dewit</h3>
+                        <img onclick="showProfile7()" class="pic-hover" src="./assets/img/willy-dewit.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
+                    <div style="margin-left: 5px"><h3 id="txt_get7">Willy Dewit</h3>
                         <small>Olá! hehe</small></div>
                     </div>
                     <div style="margin-right: 10px">
@@ -156,8 +192,8 @@
                 </div>
                 <div class="message-box" onclick="imageSwitch8()">
                     <div style="display: flex; align-items: center">
-                        <img class="pic-hover" src="https://cdn-icons-png.flaticon.com/512/924/924874.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
-                    <div style="margin-left: 5px"><h3>Hacker-man</h3>
+                        <img onclick="showProfile8()" class="pic-hover" src="./assets/img/hacker-man.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
+                    <div style="margin-left: 5px"><h3 id="txt_get8">Hacker-man</h3>
                         <small>Hi.</small></div>
                     </div>
                     <div style="margin-right: 10px">
@@ -167,9 +203,9 @@
                 </div>
                 <div class="message-box" onclick="imageSwitch9()">
                     <div style="display: flex; align-items: center">
-                        <img class="pic-hover" src="https://cdn-icons.flaticon.com/png/512/2790/premium/2790435.png?token=exp=1645847526~hmac=551eb7d7e592d750c0b3a10980cad60f" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
-                    <div style="margin-left: 5px"><h3>Charizard</h3>
-                        <small>Charizard!</small></div>
+                        <img onclick="showProfile9()" class="pic-hover" src="./assets/img/pikachu.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
+                    <div style="margin-left: 5px"><h3 id="txt_get9">Pikachu</h3>
+                        <small>Pikachu!</small></div>
                     </div>
                     <div style="margin-right: 10px">
                         <p>12:00</p>
@@ -181,7 +217,7 @@
                 <div class="teste" id="side-change3">
                     <div style="display: flex; align-items: center;">
                         <div style="display: flex; align-items: center">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2922/2922566.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px; cursor:pointer" id="img_1" class="pic-hover">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2922/2922566.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px; cursor:pointer" id="img_1" class="pic-hover" onclick="showProfile0()">
                            </div>
                             <div style="margin-left: 10px">
                                 <h3 id="txt_1">Flavia Senna</h3>
