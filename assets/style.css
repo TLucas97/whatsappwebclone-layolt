@@ -111,7 +111,6 @@ section .side-bar .search-input input::placeholder, section .side-bar .search-in
 }
 
 section .side-bar .message-box {
-  background-color: white;
   height: 80px;
   border-top: 1px solid gray;
   display: -webkit-box;
@@ -129,7 +128,7 @@ section .side-bar .message-box {
 }
 
 section .side-bar .message-box:hover {
-  background-color: rgba(255, 255, 255, 0.568);
+  background-color: #c0bdbd;
 }
 
 section .teste {

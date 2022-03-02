@@ -72,7 +72,6 @@ section{
         }
 
         .message-box{
-            background-color: white;
             height: 80px;
             border-top: 1px solid gray;
             display: flex;
@@ -83,7 +82,7 @@ section{
         }
 
         .message-box:hover{
-            background-color: rgba(255, 255, 255, 0.568);
+            background-color: rgb(192, 189, 189);
         }
     }
 

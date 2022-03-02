@@ -80,18 +80,28 @@ var today = new Date();
             const sidebar = document.getElementById("side-change")
             const sidebar2 = document.getElementById("side-change2")
             const sidebar3 = document.getElementById("side-change3")
+            const board = document.getElementById("message-board")
 
+            board.style.background = "#111B21"
+            board.style.color = "white"
             background.style.background = "#0A1014";
-            sidebar.style.background = "grey";
-            sidebar2.style.background = "grey";
-            sidebar3.style.background = "grey";
+            sidebar.style.background = "#222E35";
+            sidebar.style.color = "white"
+            sidebar2.style.background = "#222E35";
+            sidebar3.style.background = "#222E35";
+            sidebar3.style.color = "white"
         }
         function normalMode(){
             const background = document.getElementById("wrap")
             const sidebar = document.getElementById("side-change")
             const sidebar2 = document.getElementById("side-change2")
             const sidebar3 = document.getElementById("side-change3")
+            const board = document.getElementById("message-board")
 
+            board.style.background = "white"
+            board.style.color = "black"
+            sidebar.style.color = "black"
+            sidebar3.style.color = "black"
             background.style.background = "#00A884";
             sidebar.style.background = "#0B8369";
             sidebar2.style.background = "#0B8369";
