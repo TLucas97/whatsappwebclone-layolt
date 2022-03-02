@@ -350,7 +350,11 @@ var today = new Date();
         const nameWrap = document.getElementById("nameWrap")
         const nameArea = document.getElementById("nameArea")
 
-
+        let teste = document.getElementById("asd")
+        let testa
+        testa.createElement(div)
+        testa.setAtribute(id, 'testzon')
+        teste.appendChild(testa)
 
         // modalChanger.addEventListener('click', (event) => {
         //     const button = event.target;
