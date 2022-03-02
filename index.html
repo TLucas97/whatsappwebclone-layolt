@@ -94,7 +94,7 @@
     <section>
 
         <div id="container">
-            <div class="side-bar" id="side-change">
+            <div class="side-bar" id="side-change" style="overflow: scroll;">
                 <div class="sub-bar" id="side-change2">
                     <div class="profile-pic" onclick="modalShow()">
                         <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/daredevil-2380526-2013303.png" alt="aa" width="40"
@@ -212,13 +212,46 @@
                         <img src="https://cdn-icons.flaticon.com/png/512/2951/premium/2951412.png?token=exp=1645846978~hmac=59fb0ac4cd4c2c0156aa66348bc559b7" alt="aa" width="20" class="opacity-default">
                     </div>
                 </div>
+                <div class="message-box" onclick="imageSwitch9()">
+                    <div style="display: flex; align-items: center">
+                        <img onclick="showProfile9()" class="pic-hover" src="./assets/img/pikachu.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
+                    <div style="margin-left: 5px"><h3 id="txt_get9">Pikachu</h3>
+                        <small>Pikachu!</small></div>
+                    </div>
+                    <div style="margin-right: 10px">
+                        <p>12:00</p>
+                        <img src="https://cdn-icons.flaticon.com/png/512/2951/premium/2951412.png?token=exp=1645846978~hmac=59fb0ac4cd4c2c0156aa66348bc559b7" alt="aa" width="20" class="opacity-default">
+                    </div>
+                </div>
+                <div class="message-box" onclick="imageSwitch9()">
+                    <div style="display: flex; align-items: center">
+                        <img onclick="showProfile9()" class="pic-hover" src="./assets/img/pikachu.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
+                    <div style="margin-left: 5px"><h3 id="txt_get9">Pikachu</h3>
+                        <small>Pikachu!</small></div>
+                    </div>
+                    <div style="margin-right: 10px">
+                        <p>12:00</p>
+                        <img src="https://cdn-icons.flaticon.com/png/512/2951/premium/2951412.png?token=exp=1645846978~hmac=59fb0ac4cd4c2c0156aa66348bc559b7" alt="aa" width="20" class="opacity-default">
+                    </div>
+                </div>
+                <div class="message-box" onclick="imageSwitch9()">
+                    <div style="display: flex; align-items: center">
+                        <img onclick="showProfile9()" class="pic-hover" src="./assets/img/pikachu.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px">
+                    <div style="margin-left: 5px"><h3 id="txt_get9">Pikachu</h3>
+                        <small>Pikachu!</small></div>
+                    </div>
+                    <div style="margin-right: 10px">
+                        <p>12:00</p>
+                        <img src="https://cdn-icons.flaticon.com/png/512/2951/premium/2951412.png?token=exp=1645846978~hmac=59fb0ac4cd4c2c0156aa66348bc559b7" alt="aa" width="20" class="opacity-default">
+                    </div>
+                </div>
             </div>
-            <div style="width: 100%; display: flex; flex-direction: column;">
+            <div style="width: 100%; height: 100vh; position: relative;">
                 <div class="teste" id="side-change3">
                     <div style="display: flex; align-items: center;">
-                        <div style="display: flex; align-items: center">
-                            <img src="https://cdn-icons-png.flaticon.com/512/2922/2922566.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px; cursor:pointer" id="img_1" class="pic-hover" onclick="showProfile0()">
-                           </div>
+                            <div style="display: flex; align-items: center">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2922/2922566.png" alt="aa" width="50" style="border-radius: 50%; margin-left: 10px; cursor:pointer" id="img_1" class="pic-hover" onclick="showProfile0()">
+                            </div>
                             <div style="margin-left: 10px">
                                 <h3 id="txt_1">Flavia Senna</h3>
                             <small>Visto por último hoje às <span id="current_date"></span></small>
@@ -229,18 +262,21 @@
                      <img src="https://cdn-icons.flaticon.com/png/512/2311/premium/2311524.png?token=exp=1645844889~hmac=dce1b3fb9e1ef67115cbc3ab9c17b289" alt="aaa" width="20" style="margin-right: 15px" class="opacity-default">
                     </div>
                  </div>
-                 <div class="chat-box">
-                        <div style="margin-left: 10px">
-                            <img src="https://cdn-icons-png.flaticon.com/512/1023/1023656.png" alt="aaa" width="27" class="opacity-default" style="margin-right: 10px;">
-                            <img src="https://cdn-icons-png.flaticon.com/512/659/659774.png" alt="aaa" width="27" class="opacity-default">
-                        </div>
-                        <div>
-                            <input type="text" placeholder="Mensagem" class="message-input">
-                        </div>
-                        <div>
-                            <img src="https://cdn-icons-png.flaticon.com/512/709/709950.png" alt="aaa" width="35" class="opacity-default">
-                        </div>
-                </div>
+                 <div class="bottom-side">
+                    <div>teste</div> <!-- parte onde vai ficar o chat -->
+                    <div class="chat-box">
+                            <div style="margin-left: 10px; display: flex;">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1023/1023656.png" alt="aaa" width="27" class="opacity-default" style="margin-right: 10px;">
+                                <img src="https://cdn-icons-png.flaticon.com/512/659/659774.png" alt="aaa" width="27" class="opacity-default">
+                            </div>
+                            <div style="width: 90%;">
+                                <input type="text" placeholder="Mensagem" class="message-input">
+                            </div>
+                            <div style="margin-left: 18px">
+                                <img src="https://cdn-icons-png.flaticon.com/512/709/709950.png" alt="aaa" width="35" class="opacity-default">
+                            </div>
+                    </div>
+                 </div>
             </div>
         </div>
     </section>

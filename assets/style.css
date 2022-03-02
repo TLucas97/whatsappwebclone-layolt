@@ -18,6 +18,7 @@
   -webkit-transition: background .5s;
   transition: background .5s;
   height: 100vh;
+  position: relative;
 }
 
 textarea:focus, input:focus {
@@ -34,10 +35,9 @@ section {
 }
 
 section #container {
-  max-width: 1400px;
   width: 100%;
-  margin-top: 19px;
-  height: 911px;
+  position: relative;
+  height: 100vh;
   background: url("https://wallpaperaccess.com/full/562233.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -45,10 +45,10 @@ section #container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 10px;
 }
 
 section .side-bar {
+  position: relative;
   width: 30%;
   height: 100%;
   width: 419px;
@@ -148,12 +148,16 @@ section .teste {
           justify-content: space-between;
 }
 
+section .bottom-side {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 section .chat-box {
-  position: relative;
-  top: 783px;
   width: 100%;
   height: 69px;
-  background: #adaba8;
+  background: #adaba8bb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,10 +168,9 @@ section .chat-box {
 }
 
 section .message-input {
-  width: 920px;
-  height: 45px;
+  width: 100%;
+  height: 50px;
   margin-left: 10px;
-  margin-right: 15px;
   border-radius: 5px;
   border: none;
 }
