@@ -50,7 +50,7 @@ section #container {
 section .side-bar {
   position: relative;
   width: 30%;
-  height: 100%;
+  max-height: 100%;
   width: 419px;
   background: #0b8369;
   border-radius: 10px 0px 0px 10px;
@@ -315,5 +315,11 @@ section .profile-pic img {
   font-size: 23px;
   color: white;
   font-weight: bold;
+}
+
+@media (max-width: 1400px) {
+  #message-board {
+    height: 82% !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
