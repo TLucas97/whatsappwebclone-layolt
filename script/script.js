@@ -5,12 +5,18 @@ var today = new Date();
         function imageSwitch(){
             document.getElementById("img_1").src="https://cdn-icons-png.flaticon.com/512/428/428933.png"
             const background = document.getElementById("container")
+            let mensagem = document.getElementById("testzon")
+
+            mensagem.textContent = "Olá!"
             const text = document.getElementById("txt_1");
             text.textContent = "Jack Williams"
             background.style.backgroundImage = "url('https://digitalents.com.br/wp-content/uploads/2017/02/Accenture-ambitious-agenda-digital-marquee.jpg')";
         }
         function imageSwitch2(){
             document.getElementById("img_1").src="https://cdn-icons-png.flaticon.com/512/4086/4086577.png"
+            let mensagem = document.getElementById("testzon")
+
+            mensagem.textContent = "Oii, tudo bom?"
             const background = document.getElementById("container")
             const text = document.getElementById("txt_1");
             text.textContent = "Julia Roberts"
@@ -19,6 +25,9 @@ var today = new Date();
         function imageSwitch3(){
             document.getElementById("img_1").src="https://cdn-icons-png.flaticon.com/512/921/921089.png"
             const background = document.getElementById("container")
+            let mensagem = document.getElementById("testzon")
+
+            mensagem.textContent = "Vamos visitar o chris!"
             const text = document.getElementById("txt_1");
             text.textContent = "Judy Rock"
             background.style.backgroundImage = "url('https://i.pinimg.com/originals/4f/6f/a5/4f6fa5512364d0b3b4485c94fd737d9b.jpg')";
@@ -26,6 +35,9 @@ var today = new Date();
         function imageSwitch4(){
             document.getElementById("img_1").src="./assets/img/yumi-nagasaki.png"
             const background = document.getElementById("container")
+            let mensagem = document.getElementById("testzon")
+
+            mensagem.textContent = "Olá, tudo bem?"
             const text = document.getElementById("txt_1");
             text.textContent = "Yummi Nagasaki"
             background.style.backgroundImage = "url('https://wallpapercave.com/wp/wp2742875.jpg')";
@@ -33,6 +45,9 @@ var today = new Date();
         function imageSwitch5(){
             document.getElementById("img_1").src="https://cdn-icons-png.flaticon.com/512/122/122468.png"
             const background = document.getElementById("container")
+            let mensagem = document.getElementById("testzon")
+
+            mensagem.textContent = "Fala cara! Aqui é o Bob fly, o cara mais dahora da cidade"
             const text = document.getElementById("txt_1");
             text.textContent = "Bob fly"
             background.style.backgroundImage = "url('https://picjumbo.com/wp-content/uploads/calm-sea-background-2210x1473.jpg')";
@@ -40,6 +55,9 @@ var today = new Date();
         function imageSwitch6(){
             document.getElementById("img_1").src="../assets/img/john-strew.png"
             const background = document.getElementById("container")
+            let mensagem = document.getElementById("testzon")
+
+            mensagem.textContent = "Olá senhor!"
             const text = document.getElementById("txt_1");
             text.textContent = "John Strew"
             background.style.backgroundImage = "url('https://i.pinimg.com/originals/13/65/96/1365966106c7cf5a9e4eb0cbe5d20432.jpg')";
@@ -47,6 +65,9 @@ var today = new Date();
         function imageSwitch7(){
             document.getElementById("img_1").src="../assets/img/willy-dewit.png"
             const background = document.getElementById("container")
+            let mensagem = document.getElementById("testzon")
+
+            mensagem.textContent = "Olá, hehe"
             const text = document.getElementById("txt_1");
             text.textContent = "Willy Dewit"
             background.style.backgroundImage = "url('https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max')";
@@ -54,6 +75,9 @@ var today = new Date();
         function imageSwitch8(){
             document.getElementById("img_1").src="https://cdn-icons-png.flaticon.com/512/924/924874.png"
             const background = document.getElementById("container")
+            let mensagem = document.getElementById("testzon")
+
+            mensagem.textContent = "Hi."
             const text = document.getElementById("txt_1");
             text.textContent = "Hacker-man"
             background.style.backgroundImage = "url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&w=1000&q=80')";
@@ -61,6 +85,9 @@ var today = new Date();
         function imageSwitch9(){
             document.getElementById("img_1").src="../assets/img/pikachu.png"
             const background = document.getElementById("container")
+            let mensagem = document.getElementById("testzon")
+
+            mensagem.textContent = "Pikachu!"
             const text = document.getElementById("txt_1");
             text.textContent = "Pikachu"
             background.style.backgroundImage = "url('https://wallpaperforu.com/wp-content/uploads/2021/08/Wallpaper-Pokemon-Wallpaper-Pokemon-Minimalism-Squirtle441280x1024.jpg')";
@@ -68,6 +95,9 @@ var today = new Date();
         function imageSwitchStart(){
             document.getElementById("img_1").src="https://cdn-icons-png.flaticon.com/512/2922/2922566.png"
             const background = document.getElementById("container")
+            let mensagem = document.getElementById("testzon")
+
+            mensagem.textContent = "Seja bem vindo ao meu projeto"
             const text = document.getElementById("txt_1");
             text.textContent = "Flavia Senna"
             background.style.backgroundImage = "url('https://wallpaperaccess.com/full/562233.jpg')";
