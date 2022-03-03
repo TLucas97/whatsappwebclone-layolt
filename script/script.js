@@ -350,11 +350,29 @@ var today = new Date();
         const nameWrap = document.getElementById("nameWrap")
         const nameArea = document.getElementById("nameArea")
 
-        let teste = document.getElementById("asd")
-        let testa
-        testa.createElement(div)
-        testa.setAtribute(id, 'testzon')
-        teste.appendChild(testa)
+
+        var input = document.createElement("input")
+        input.setAttribute('type', 'text')
+        input.setAttribute('id', 'input-selector')
+        var parent = document.getElementById("input-selector")
+        parent.appendChild(input)
+
+        function sendMessage(){
+            var tag = document.createElement("h3");
+            tag.textContent = input.value
+            tag.setAttribute('id', 'edit');
+            var element = document.getElementById("message-send");
+            element.appendChild(tag);
+            input.value=''
+        }
+
+        function inputEnter(){
+            const send = document.getElementById("send")
+            const voice = document.getElementById("voice")
+
+            send.style.display = "block"
+            voice.style.display = "none"
+        }
 
         // modalChanger.addEventListener('click', (event) => {
         //     const button = event.target;
@@ -369,3 +387,4 @@ var today = new Date();
         //      }
         // })
 
+ 

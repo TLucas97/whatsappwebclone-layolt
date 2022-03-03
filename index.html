@@ -265,17 +265,20 @@
                     </div>
                  </div>
                  <div class="bottom-side">
-                    <div class="message-baloon"><h3 id="testzon"><span>Seja bem vindo ao meu projeto</span></h3></div> <!-- parte onde vai ficar o chat -->
+                    <div class="message-baloon"><h3 id="testzon"><span >Seja bem vindo ao meu projeto</span></h3></div> <!-- parte onde vai ficar o chat -->
+                    <div id="message-send"></div>
                     <div class="chat-box">
                             <div style="margin-left: 10px; display: flex;">
                                 <img src="./assets/img/emoji.png" alt="aaa" width="27" class="opacity-default" style="margin-right: 10px;">
                                 <img src="./assets/img/clip.png" alt="aaa" width="27" class="opacity-default">
                             </div>
                             <div style="width: 90%;">
-                                <input type="text" placeholder="Mensagem" class="message-input">
+                                <!-- <input type="text" placeholder="Mensagem" class="message-input" id="message-creator"> -->
+                                <div id="input-selector" onclick="inputEnter()"></div>
                             </div>
                             <div style="margin-left: 18px">
-                                <img src="./assets/img/mic.png" alt="aaa" width="35" class="opacity-default">
+                                <img src="./assets/img/mic.png" alt="aaa" width="35" class="opacity-default" id="voice">
+                                <img src="./assets/img/send.png" alt="sad" width="35" class="opacity-default" id="send" onclick="sendMessage()">
                             </div>
                     </div>
                  </div>

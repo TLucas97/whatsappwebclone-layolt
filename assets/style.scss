@@ -118,6 +118,14 @@ section{
         border: none;
     }
 
+    #input-selector{
+        width: 99%;
+        height: 50px;
+        margin-left: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+
     .chat-box input::placeholder, .chat-box input[type="text"]{
         padding-left: 10px;
         font-size: 20px;
@@ -227,12 +235,11 @@ section{
 }
 
 .message-baloon{
-    background-color: white;
+    background-color: rgb(219, 217, 217);
     margin-left: 80px;
     margin-bottom: 35px;
     padding: 20px;
-    width: 300px;
-    height: 60px;
+    width: 250px;
     -webkit-border-radius: 100px;
     -webkit-border-top-left-radius: 0;
     -moz-border-radius: 100px;
@@ -247,9 +254,44 @@ section{
     font-weight: bold;
 }
 
+#edit{
+    background-color: #005C4B;
+    margin-left: 80px;
+    margin-bottom: 35px;
+    padding: 20px;
+    width: 250px;
+    -webkit-border-radius: 100px;
+    -webkit-border-top-right-radius: 0;
+    -moz-border-radius: 100px;
+    -moz-border-radius-topright: 0;
+    border-radius: 100px;
+    border-top-right-radius: 0;
+    border: 1px solid rgba(0, 0, 0, 0.103);
+    -webkit-box-shadow: 5px 5px 9px 3px rgba(0,0,0,0.48); 
+    box-shadow: 5px 5px 9px 3px rgba(0,0,0,0.48);
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-left: 1250px;
+    color: white;
+}
+
+#message-send{
+    display: flex;
+    flex-direction: column;
+}
+
+#send{
+    display:none;
+}
+
 @media (max-width: 1400px)
 {
     #message-board{
         height: 82% !important;
+    }
+
+    #edit{
+        margin-left: 770px !important;
     }
 }
